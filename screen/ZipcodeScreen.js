@@ -45,6 +45,9 @@ export default function ZipCodeScreen() {
 }
 
 const style = StyleSheet.create({
+    type: {
+        
+    },
 
     zipItem: {
         flex: 1,

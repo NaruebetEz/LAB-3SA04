@@ -13,7 +13,8 @@ export default function Weather(props) {
                     setForecastInfo({
                         main: json.weather[0].main,
                         description: json.weather[0].description,
-                        temp: json.main.temp
+                        temp: json.main.temp,
+                        humidity: json.main.humidity,
                     });
                 })
                 .catch((error) => {
@@ -27,7 +28,9 @@ export default function Weather(props) {
     const [forecastInfo, setForecastInfo] = useState({
         main: 'main',
         description: 'description',
-        temp: 0
+        temp: 0,
+        humidity: 0,
+
     });
     return (
         <ImageBackground source={require("../bg.png")} style={styles.backdrop}>

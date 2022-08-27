@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { ImageBackground, Text, StyleSheet, View } from 'react-native';
 import Forecast from './Forecast';
 import Constants from 'expo-constants';
@@ -21,6 +21,8 @@ export default function Weather(props) {
                 });
         }
     }, [props.zipCode])
+
+
 
     const [forecastInfo, setForecastInfo] = useState({
         main: 'main',

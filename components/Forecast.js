@@ -15,6 +15,10 @@ export default function Forecast(props) {
                 <Text style = {styles.fontsize}>{props.temp}°C</Text>
             </View>
 
+            <View style = {styles.container}>
+                <Text style = {styles.fontsize}>{props.humidity} %</Text>
+            </View>
+
         </View>
     );
 }

@@ -15,6 +15,8 @@ export default function Weather(props) {
                         description: json.weather[0].description,
                         temp: json.main.temp,
                         humidity: json.main.humidity,
+                        pressure: json.main.pressure,
+
                     });
                 })
                 .catch((error) => {
@@ -30,6 +32,7 @@ export default function Weather(props) {
         description: 'description',
         temp: 0,
         humidity: 0,
+        pressure: 0,
 
     });
     return (
